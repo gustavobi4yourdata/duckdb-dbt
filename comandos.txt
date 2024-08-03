@@ -1,0 +1,36 @@
+1) // clone jaffle_shop project
+git clone https://github.com/dbt-labs/jaffle_shop.git
+
+2) cd jaffle_shop
+
+3) pyenv local 3.12.1
+
+4) poetry init
+
+5) poetry env use 3.12.1
+
+6) poetry shell
+
+7) poetry add dbt-duckdb
+
+8) poetry add duchdb
+
+9) cd models
+
+10) criar arquivo profiles.yml
+
+11) dbt build
+
+12) dbt run
+
+13) dbt test
+
+14) Criar documentação
+    - dbt docs generate
+    - dbt docs serve
+
+15) Outro comandos
+    - dbt debug
+    - dbt run --select nome_arquivo.sql (para rodar individual)
+    - dbt test -m nome_teste
+    - dbt clean
